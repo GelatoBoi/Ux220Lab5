@@ -1,0 +1,7 @@
+x-center{
+    visability: hidden;
+}
+
+x-center:defined{
+    visability: visable;
+}
