@@ -6,6 +6,14 @@ class AreebElement extends HTMLElement{
 
 customElements.define("x-areeb", AreebElement);
 
+
+
+
+
+
+
+
+
 class CenterElement extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `<div style="text-align:center">${this.innerHTML}</div>
@@ -15,6 +23,13 @@ class CenterElement extends HTMLElement{
 
 customElements.define("x-center", CenterElement);
 
+
+
+
+
+
+
+
 class YearElement extends HTMLElement{
     connectedCallback(){
         this.innerHTML = new Date().getFullYear();   
@@ -22,4 +37,18 @@ class YearElement extends HTMLElement{
 }
 
 customElements.define("x-fullyear", YearElement);
+
+
+
+
+
+
+class UseElement extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `<div style="color:red">${this.innerHTML}</div>
+        ` ;   
+    }
+}
+
+customElements.define("x-colorred", UseElement);
 
